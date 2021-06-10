@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img class="image-logo" src="assets/img/logo.png"></a>
+    </div>
+    <ul>
+      <li>
+        <div id="slide-shopnow">
+          Shop now
+          <select name="" class="nav-select"></select>
+        </div>
+      </li>
+      <li><a href="">Promotion</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">About Us</a></li>
+    </ul>
+    <div id="search">
+      <form action="#" id="searchform" method="get">
+        <input placeholder="Search" class="input-search" type="text">
+        <!-- <button class="button-search">Cari</button> -->
+        <img src="assets/img/cari.png" style="height:25px;">
+      </form>
+    </div>
+    <div class="sign-in">
+      <a href="login.html">Sign in</a>
+      |
+      <a href="cart.html">Cart</a>
+    </div>
+
+    <div class="navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-mobile" id="menu-mobile" style="display: none;">
+      <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="">Accoustic Guitars</a></li>
+        <li><a href="">Electric Guitars</a></li>
+        <li><a href="">Amplifiers</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Guitar Lessons</a></li>
+        <li><a href="">Guitar Repair</a></li>
+        <li><a href="">Promotions</a></li>
+        <li><a href="">Contact</a> </li>
+        <li><a href="">About Us</a> </li>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="slide-shopnow-active" class="slide-shopnow">
+    <div class="slide-shopnow1">
+      <div class="list-shopnow1">
+        <h3><u>Guitars</u></h3>
+        <ul>
+          <li>See All</li>
+          <li>Acoustic Guitars</li>
+          <li>Electric Guitars</li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="list-shopnow1">
+        <h3><u>Ukulele</u></h3>
+        <ul>
+          <li>See All</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="list-shopnow1">
+        <h3><u>Amplifiers</u></h3>
+        <ul>
+          <li>See All</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="list-shopnow1">
+        <h3><u>Accessories</u></h3>
+        <ul>
+          <li>See All</li>
+          <li>Effect Pedals</li>
+          <li>Strings</li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-shopnow2">
+      <div class="list-shopnow1">
+        <h3><u>Lessons</u></h3>
+        <ul>
+          <li>See All</li>
+          <li>Guitar Lessons</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="list-shopnow1">
+        <h3><u>Repair</u></h3>
+        <ul>
+          <li>See All</li>
+          <li>Guitar Repair</li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="login-box" style="margin-bottom: 20px;">
+      <div style="padding: 15px 0; text-align: center;">
+        <h1>Shopping Cart</h1>
+      </div>
+      <hr>
+      <div style="padding:20px 0; width: 50%; margin: 0 auto;">
+        <div style="float: left; border: 0px solid; width: 34%; text-align: center;">
+          <img src="assets/img/item3.png" width="50%">
+        </div>
+        <div style="float: right; border: 0px solid; width: 65%;">
+          <div style="font-size: 20px;">Yamaha FG800 Accoustic</div>
+          <div style="font-size: 12px;">YAM-FG800BS</div>
+          <div style="margin-top: 20px;">
+            <button id="decrease-btn">-</button>
+            <input type="number" value="1" class="input input-quantity" style="width:20%">
+            <button id="increase-btn">+</button>
+            <b>$450.00</b>
+          </div>
+
+          <div style="margin-top:20px; padding: 10px; background-color: #000; color: #fff; width: max-content;"
+            class="cart-detail">
+            <table>
+              <tr>
+                <td>Subtotal <small>(inc GST)</small></td>
+                <td style="width: 15%;">:</td>
+                <td>$450.00</td>
+              </tr>
+              <tr>
+                <td>GST</td>
+                <td style="width: 15%;">:</td>
+                <td>$20.00</td>
+              </tr>
+              <tr>
+                <td>Total <small>(inc GST)</small></td>
+                <td style="width: 15%;">:</td>
+                <td>$450.00</td>
+              </tr>
+            </table>
+          </div>
+
+          <div style="margin-top: 10px;">
+            <div style="font-size: 12px;">Order Notes :</div>
+            <textarea style="width: 78%;" rows="4"></textarea>
+          </div>
+          <div style="margin-top: 20px;">
+            <a href="delivery.html" class="btn-black">CHECKOUT</a>
+          </div>
+        </div>
+      </div>
+      <div style="float:left;margin-top:20px; padding: 10px; background-color: #000; color: #fff; width: max-content;"
+        class="cart-detail-mobile">
+        <table>
+          <tr>
+            <td>Subtotal <small>(inc GST)</small></td>
+            <td style="width: 15%;">:</td>
+            <td>$450.00</td>
+          </tr>
+          <tr>
+            <td>GST</td>
+            <td style="width: 15%;">:</td>
+            <td>$20.00</td>
+          </tr>
+          <tr>
+            <td>Total <small>(inc GST)</small></td>
+            <td style="width: 15%;">:</td>
+            <td>$470.00</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <div id="trending" style="width: 100%; clear: both; padding-top: 40px;">
+      <hr>
+      <div style="padding: 15px 0; text-align: center;">
+        <h1>Trending :</h1>
+      </div>
+      <hr>
+      <div class="trending-box">
+        <div class="box2">
+          <div class="box2-img">
+            <img src="assets/img/item1.png">
+          </div>
+          <div>
+            Yamaha FS800 Accoustic Guitar
+            <br>
+            <b>$350</b>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="box2-img">
+            <img src="assets/img/item2.png">
+          </div>
+          <div>
+            Fender Frontman Amplifiers
+            <br>
+            <b>$250</b>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="box2-img">
+            <img src="assets/img/item3.png">
+          </div>
+          <div>
+            Yamaha FG800 Accoustic
+            <br>
+            <b>$450</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="submit">
+    <div class="submit-box">
+      <h3>SIGN UP TO RECEIVE SPAECIAL OFFERS & THE LATEST NEWS</h3>
+      <div style="margin-top: 20px;">
+        <form action="" method="post">
+          <input type="email" name="email" required>
+          <button class="btn-black">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-box">
+      <div class="box3">
+        <ul>
+          <li><b>Show Now:</b></li>
+          <li>Accoustic Guitars</li>
+          <li>Electric Guitars</li>
+          <li>Amplifiers</li>
+          <li>Accessories</li>
+          <li>Guitar Lessons</li>
+          <li>Service</li>
+        </ul>
+      </div>
+      <div class="box3">
+        <ul>
+          <li><b>Store Hours:</b></li>
+          <li>Monday: 11am - 5pm</li>
+          <li>Tuesday: 11am - 5pm</li>
+          <li>Wednesday: 11am - 5pm</li>
+          <li>Thursday: 11am - 5pm</li>
+          <li>Friday: 11am - 5pm</li>
+          <li>Saturday: 11am - 5pm</li>
+          <li>Sunday: 11am - 5pm</li>
+        </ul>
+      </div>
+      <div class="box3">
+        <ul>
+          <li><b>Contact Us:</b></li>
+          <li>info@dansguitars.com</li>
+          <li>808-942-2900</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/quantity.js"></script>
+  <script src="assets/js/head.js"></script>
+
+</body>
+
+</html>
